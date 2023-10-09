@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Practice from './Practice';
 import './App.css';
 
 function App() {
-  return (
+  const callback=(a)=>console.log(a)
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className='App-header'>
+        <Practice string={'string'} number={2} boolean={true} object={{count:0}} array={[1,2]} callback={callback} />
+      </header>['']
     </div>
   );
 }
